@@ -1,0 +1,22 @@
+
+(venv) C:\Users\ivank\PycharmProjects\TormentNexus\Learning>spyking-circus C:\Users\ivank\PycharmProjects\TormentNexus\Learning\spykingcircus_output\sorter_output\recording.npy -c 16 
+[0mTraceback (most recent call last):
+[0m[0m  File "<frozen runpy>", line 198, in _run_module_as_main
+[0m[0m  File "<frozen runpy>", line 88, in _run_code
+[0m[0m  File "C:\Users\ivank\OneDrive\Documents\GitHub\TormentNexus\venv\Scripts\spyking-circus.exe\__main__.py", line 7, in <module>
+[0m[0m  File "C:\Users\ivank\OneDrive\Documents\GitHub\TormentNexus\venv\Lib\site-packages\circus\scripts\launch.py", line 178, in main
+[0m[0m    [0mparams = CircusParser(real_file)[0m
+[0m[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m
+[0m[0m  File "C:\Users\ivank\OneDrive\Documents\GitHub\TormentNexus\venv\Lib\site-packages\circus\shared\parser.py", line 292, in __init__
+[0m[0m    [0mvalid_path = check_valid_path(self.file_params)[0m
+[0m[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m
+[0m[0m  File "C:\Users\ivank\OneDrive\Documents\GitHub\TormentNexus\venv\Lib\site-packages\circus\shared\mpi.py", line 55, in check_valid_path
+[0m[0m    [0mres = all_gather_array(data, comm, dtype='int32').astype(numpy.bool)[0m
+[0m[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m^[0m
+[0m[0m  File "C:\Users\ivank\OneDrive\Documents\GitHub\TormentNexus\venv\Lib\site-packages\numpy\__init__.py", line 338, in __getattr__
+[0m[0m    [0mraise AttributeError(__former_attrs__[attr])[0m
+[0m[0mAttributeError[0m: [0mmodule 'numpy' has no attribute 'bool'.
+`np.bool` was a deprecated alias for the builtin `bool`. To avoid this error in existing code, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations[0m. Did you mean: 'bool_'?[0m
+[0m[0m[0m

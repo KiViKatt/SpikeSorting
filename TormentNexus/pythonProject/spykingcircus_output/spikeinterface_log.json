@@ -1,0 +1,39 @@
+{
+    "sorter_name": "spykingcircus",
+    "sorter_version": "1.1.0",
+    "datetime": "2024-11-06T14:47:51.722468",
+    "runtime_trace": [
+        "",
+        "(base) C:\\Users\\ivank\\PycharmProjects\\pythonProject>spyking-circus C:\\Users\\ivank\\PycharmProjects\\pythonProject\\spykingcircus_output\\sorter_output\\recording.npy -c 16",
+        "\u001b[0mTraceback (most recent call last):",
+        "\u001b[0m\u001b[0m  File \"<frozen runpy>\", line 198, in _run_module_as_main",
+        "\u001b[0m\u001b[0m  File \"<frozen runpy>\", line 88, in _run_code",
+        "\u001b[0m\u001b[0m  File \"C:\\Users\\ivank\\miniconda3\\Scripts\\spyking-circus.exe\\__main__.py\", line 7, in <module>",
+        "\u001b[0m\u001b[0m  File \"C:\\Users\\ivank\\miniconda3\\Lib\\site-packages\\circus\\scripts\\launch.py\", line 178, in main",
+        "\u001b[0m\u001b[0m    \u001b[0mparams = CircusParser(real_file)\u001b[0m",
+        "\u001b[0m\u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m",
+        "\u001b[0m\u001b[0m  File \"C:\\Users\\ivank\\miniconda3\\Lib\\site-packages\\circus\\shared\\parser.py\", line 292, in __init__",
+        "\u001b[0m\u001b[0m    \u001b[0mvalid_path = check_valid_path(self.file_params)\u001b[0m",
+        "\u001b[0m\u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m",
+        "\u001b[0m\u001b[0m  File \"C:\\Users\\ivank\\miniconda3\\Lib\\site-packages\\circus\\shared\\mpi.py\", line 55, in check_valid_path",
+        "\u001b[0m\u001b[0m    \u001b[0mres = all_gather_array(data, comm, dtype='int32').astype(numpy.bool)\u001b[0m",
+        "\u001b[0m\u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m \u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m^\u001b[0m",
+        "\u001b[0m\u001b[0m  File \"C:\\Users\\ivank\\miniconda3\\Lib\\site-packages\\numpy\\__init__.py\", line 338, in __getattr__",
+        "\u001b[0m\u001b[0m    \u001b[0mraise AttributeError(__former_attrs__[attr])\u001b[0m",
+        "\u001b[0m\u001b[0mAttributeError\u001b[0m: \u001b[0mmodule 'numpy' has no attribute 'bool'.",
+        "`np.bool` was a deprecated alias for the builtin `bool`. To avoid this error in existing code, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.",
+        "The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:",
+        "https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations\u001b[0m. Did you mean: 'bool_'?\u001b[0m",
+        "\u001b[0m\u001b[0m\u001b[0m"
+    ],
+    "error": true,
+    "error_trace": [
+        "Traceback (most recent call last):",
+        "  File \"C:\\Users\\ivank\\miniconda3\\Lib\\site-packages\\spikeinterface\\sorters\\basesorter.py\", line 261, in run_from_folder",
+        "    SorterClass._run_from_folder(sorter_output_folder, sorter_params, verbose)",
+        "  File \"C:\\Users\\ivank\\miniconda3\\Lib\\site-packages\\spikeinterface\\sorters\\external\\spyking_circus.py\", line 182, in _run_from_folder",
+        "    raise Exception(\"spykingcircus returned a non-zero exit code\")",
+        "  Exception: spykingcircus returned a non-zero exit code"
+    ],
+    "run_time": null
+}
