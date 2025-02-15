@@ -4,7 +4,7 @@ from probeinterface import Probe, ProbeGroup
 
 # Create a synthetic recording
 num_channels = 32
-sampling_frequency = 30000
+sampling_frequency = 20000
 duration = 10.0
 recording = si.NumpyRecording(
     [np.random.randn(int(sampling_frequency * duration), num_channels)],
@@ -23,9 +23,9 @@ probe.set_device_channel_indices(np.arange(num_channels))
 
 # Attach the Probe
 print("\nAttaching Probe...")
-recording.set_probe(probe)
+BFix1 = recording.set_probe(probe)
 try:
-    attached_probe = recording.get_probe()
+    attached_probe = BFix1
     print(f"Attached Probe: {attached_probe}")
 except Exception as e:
     print(f"Error accessing attached Probe: {e}")
@@ -34,9 +34,9 @@ except Exception as e:
 print("\nAttaching ProbeGroup...")
 probegroup = ProbeGroup()
 probegroup.add_probe(probe)
-recording.set_probegroup(probegroup)
+BFix2 = recording.set_probegroup(probegroup)
 try:
-    attached_probegroup = recording.get_probegroup()
+    attached_probegroup = BFix2
     print(f"Attached ProbeGroup: {attached_probegroup}")
 except Exception as e:
     print(f"Error accessing attached ProbeGroup: {e}")
